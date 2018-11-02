@@ -5,8 +5,9 @@ A template to generate project  document using doxygen
 sudo apt-get install doxygen
 
 ### Generate document
-> doxygen -g doc.dot    
+> doxygen -g doc.dot # create doxygen config   
 
+> vim doc.dot # modify doxygen project config
 ```
 PROJECT_NAME           = "Device SDK APIs"
 PROJECT_NUMBER         = "ver: 2.3.0"
@@ -19,5 +20,5 @@ RECURSIVE              = YES
 GENERATE_LATEX         = NO
 ```
 
-> doxygen doc.dot
+> doxygen doc.dot # generate html document
 
